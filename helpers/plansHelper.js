@@ -18,10 +18,15 @@ let addPlan = (req) =>{
             if(err || req.body==null)
                 return reject("Couldn't insert plan");
             var plansData = JSON.parse(data);
+            if(!req.body.Type.Local)
+                req.body.Type.Local=100
+            if(!req.body.Type.STD)
+                req.body.Type.STD=100
             plansData.plans.push(req.body);
             fs.writeFileSync("./plans.json", JSON.stringify(plansData));
             return resolve("plans updated");
         })
+        return reject('Could not update the plans');
     })
 }
 
