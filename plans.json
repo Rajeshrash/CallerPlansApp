@@ -1,27 +1,45 @@
 {
     "plans": [{
-        "Name": "Plan 1",
-        "Price": "5000",
-        "Validity": "15",
-        "Type": {
-            "STD": "20",
-            "Local": "20"
+            "Name": "Plan 1",
+            "Price": "5000",
+            "Validity": "15",
+            "Type": {
+                "STD": "20",
+                "Local": "20"
+            }
+        }, {
+            "Name": "Plan 2",
+            "Price": "3500",
+            "Validity": "30",
+            "Type": {
+                "STD": "50",
+                "Local": "50"
+            }
+        }, {
+            "Name": "Plan 3",
+            "Price": "2000",
+            "Validity": "30",
+            "Type": {
+                "STD": "100",
+                "Local": "50"
+            }
+        }, {
+            "Name": "Plan 4",
+            "Price": "2000",
+            "Validity": "30",
+            "Type": {
+                "STD": "20",
+                "Local": "100"
+            }
+        },
+        {
+            "Name": "Plan 5",
+            "Price": "2000",
+            "Validity": "30",
+            "Type": {
+                "STD": "20000",
+                "Local": "10000"
+            }
         }
-    }, {
-        "Name": "Plan 2",
-        "Price": "3500",
-        "Validity": "30",
-        "Type": {
-            "STD": "50",
-            "Local": "50"
-        }
-    }, {
-        "Name": "Plan 3",
-        "Price": "2000",
-        "Validity": "30",
-        "Type": {
-            "STD": "100",
-            "Local": "50"
-        }
-    }]
+    ]
 }

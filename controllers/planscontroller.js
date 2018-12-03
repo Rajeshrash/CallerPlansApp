@@ -20,7 +20,7 @@ let getEfficientPlan =(req,res) => {
     plansHelper.getEfficientCost(req).then((response)=>{
         res.json(response);
     }).catch((err)=>{
-        res.json({"Error":err})
+        res.json({"Error":JSON.stringify(err)})
     })
 }
 
